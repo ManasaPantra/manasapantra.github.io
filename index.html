@@ -89,7 +89,7 @@
         .about-content {
             display: flex;
             gap: 40px;
-            align-items: center;
+            align-items: flex-start;  /* Changed from center to align at top */
             flex-wrap: wrap;
         }
         
@@ -109,6 +109,7 @@
         .about-text {
             flex: 2;
             min-width: 300px;
+            padding-top: 10px; /* Add padding to better align with image */
         }
         
         .skills-container {
@@ -236,6 +237,13 @@
             color: var(--light-text);
             font-style: italic;
             margin-bottom: 15px;
+        }
+        
+        .org-logo {
+            max-width: 100px;
+            margin-bottom: 15px;
+            height: 40px;
+            object-fit: contain;
         }
         
         .projects-grid {
@@ -471,6 +479,7 @@
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/SanDisk_logo.svg" alt="Sandisk Logo" class="org-logo">
                         <h3>Engineer, Firmware Design and Development</h3>
                         <p class="date">Oct 2023 – Aug 2024 | Sandisk, Bangalore, India</p>
                         <ul>
@@ -483,6 +492,7 @@
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/SanDisk_logo.svg" alt="Sandisk Logo" class="org-logo">
                         <h3>Firmware Design and Development Intern</h3>
                         <p class="date">Jan 2023 – Jun 2023 | Sandisk, Bangalore, India</p>
                         <ul>
@@ -503,6 +513,7 @@
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
+                        <img src="https://www.stonybrook.edu/far-beyond/img/branding/logo/sbu-logo-horizontal.svg" alt="Stony Brook University Logo" class="org-logo">
                         <h3>Stony Brook University</h3>
                         <p class="date">Aug 2023 - Present | Stony Brook, New York</p>
                         <p>M.S. in Engineering of Artificial Intelligence</p>
@@ -510,6 +521,7 @@
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH37LtXYCjKlvUMdtrfVcShDxKHRjgmWRErg&usqp=CAU" alt="PSG Institute Logo" class="org-logo">
                         <h3>PSG Institute of Technology and Applied Research</h3>
                         <p class="date">Aug 2019 - May 2023 | Tamil Nadu, India</p>
                         <p>B.E. in Computer Science Engineering</p>
