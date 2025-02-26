@@ -1,4 +1,41 @@
-<!DOCTYPE html>
+<section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="logo-container">
+                            <img src="sandisk.png" alt="Sandisk Logo">
+                            <h3>Engineer, Firmware Design and Development</h3>
+                        </div>
+                        <p class="date">Oct 2023 – Aug 2024 | Sandisk, Bangalore, India</p>
+                        <ul>
+                            <li>Led PSUT module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
+                            <li>Identified critical performance bottlenecks through in-depth technical diagnostics</li>
+                            <li>Analyzed Read Error Handling path, resolving critical bugs in data path operations</li>
+                            <li>Investigated and resolved hardware bugs across simulation and real hardware environments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="logo-container">
+                            <img src="sandisk.png" alt="Sandisk Logo">
+                            <h3>Firmware Design and Development Intern</h3>
+                        </div>
+                        <p class="date">Jan 2023 – Jun 2023 | Sandisk, Bangalore, India</p>
+                        <ul>
+                            <li>Gained insights into 2D/3D NAND memory architecture and flash interface implementations</li>
+                            <li>Participated in debugging hardware-software interface issues using JTAG & simulation tools</li>
+                            <li>Improved memory performance by analyzing allocation patterns and resource utilization</li>
+                            <li>Analyzed NVMe protocol command structures and firmware interaction mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -334,6 +371,19 @@
             background-color: rgba(255, 255, 255, 0.2);
         }
         
+        /* Logo styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .logo-container img {
+            height: 40px;
+            margin-right: 15px;
+            object-fit: contain;
+        }
+        
         /* Media query adjustments */
         @media screen and (max-width: 768px) {
             header h1 {
@@ -368,6 +418,16 @@
             
             .right {
                 left: 0%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container img {
+                margin-right: 0;
+                margin-bottom: 10px;
             }
         }
     </style>
@@ -482,7 +542,10 @@
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3>Engineer, Firmware Design and Development</h3>
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <img src="sandisk.png" alt="Sandisk Logo" style="height: 40px; margin-right: 15px;">
+                            <h3>Engineer, Firmware Design and Development</h3>
+                        </div>
                         <p class="date">Oct 2023 – Aug 2024 | Sandisk, Bangalore, India</p>
                         <ul>
                             <li>Led PSUT module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
@@ -494,7 +557,10 @@
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3>Firmware Design and Development Intern</h3>
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <img src="sandisk.png" alt="Sandisk Logo" style="height: 40px; margin-right: 15px;">
+                            <h3>Firmware Design and Development Intern</h3>
+                        </div>
                         <p class="date">Jan 2023 – Jun 2023 | Sandisk, Bangalore, India</p>
                         <ul>
                             <li>Gained insights into 2D/3D NAND memory architecture and flash interface implementations</li>
@@ -514,14 +580,20 @@
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3>Stony Brook University</h3>
+                        <div class="logo-container">
+                            <img src="sbu.png" alt="Stony Brook University Logo">
+                            <h3>Stony Brook University</h3>
+                        </div>
                         <p class="date">Aug 2023 - Present | Stony Brook, New York</p>
                         <p>M.S. in Engineering of Artificial Intelligence</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3>PSG Institute of Technology and Applied Research</h3>
+                        <div class="logo-container">
+                            <img src="psg.png" alt="PSG Institute Logo">
+                            <h3>PSG Institute of Technology and Applied Research</h3>
+                        </div>
                         <p class="date">Aug 2019 - May 2023 | Tamil Nadu, India</p>
                         <p>B.E. in Computer Science Engineering</p>
                     </div>
