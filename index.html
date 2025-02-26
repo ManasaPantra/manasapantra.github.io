@@ -1,334 +1,436 @@
+Bot: Adaptive AI Tutor</h3>
+                                        <p className="text-gray-600 mb-3">Intelligent tutoring system for personalized learning</p>
+                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
+                                            <li>Curated high-quality dataset of 1,500 instances from 5,000 samples</li>
+                                            <li>Developed domain-specific chatbot using Mistral-7B with 99% accuracy</li>
+                                            <li>Enhanced model reasoning by dynamically controlling test-time compute</li>
+                                            <li>Implemented 4-bit quantization to reduce model inference time by 40%</li>
+                                            <li>Integrated LoRA to improve model efficiency by 45%</li>
+                                        </ul>
+                                        <div className="flex flex-wrap gap-2 mt-3">
+                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">PyTorch</span>
+                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">LLMs</span>
+                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">LoRA</span>
+                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Quantization</span>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-bold text-green-800 mb-2">Language Neutralization System</h3>
+                                        <p className="text-gray-600 mb-3">Real-time translation system for multilingual call centers</p>
+                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
+                                            <li>Architected real-time translation system supporting 10+ languages</li>
+                                            <li>Constructed streaming pipeline with Speech Recognition, Translation, and TTS</li>
+                                            <li>Reduced processing delay by 40% through optimized streaming</li>
+                                            <li>Streamlined system for accelerated machines, yielding 30% performance boost</li>
+                                            <li>Established API web socket, amplifying system accessibility by 80%</li>
+                                        </ul>
+                                        <div className="flex flex-wrap gap-2 mt-3">
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ASR</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">NLP</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">TTS</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Docker</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">API</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    case 'publications':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Research Publications</h2>
+                                <div className="space-y-4">
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Cloud Migration Research</h3>
+                                        <p className="text-gray-600 mb-3">A Study on Cloud Migration and Exploring Its Application and Impact on Modern Technology</p>
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div>
+                                                <span className="text-sm text-gray-500">Bachelor of Engineering Project</span>
+                                                <p className="text-sm text-gray-600">PSG Institute of Technology and Applied Research</p>
+                                            </div>
+                                            <span className="text-sm text-gray-500">August 2021</span>
+                                        </div>
+                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
+                                            <li>Conducted comprehensive research on cloud migration strategies</li>
+                                            <li>Explored diverse applications of cloud migration</li>
+                                            <li>Analyzed key cloud migration tools and deployment models</li>
+                                            <li>Examined case studies from leading tech companies</li>
+                                        </ul>
+                                        <div className="flex flex-wrap gap-2 mt-3">
+                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Cloud Computing</span>
+                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Digital Transformation</span>
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-bold text-green-800 mb-2">Brain Abnormality Analysis</h3>
+                                        <p className="text-gray-600 mb-3">Analysis of Brain Abnormalities using Global Measures of Graph Theory</p>
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div>
+                                                <span className="text-sm text-gray-500">Collaborative Research Project</span>
+                                                <p className="text-sm text-gray-600">PSG Institute of Technology and Applied Research</p>
+                                            </div>
+                                            <span className="text-sm text-gray-500">August 2021</span>
+                                        </div>
+                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
+                                            <li>Developed machine learning model for brain abnormality detection</li>
+                                            <li>Constructed unweighted functional brain networks from EEG data</li>
+                                            <li>Applied graph theory measures for network analysis</li>
+                                            <li>Developed machine learning models for brain pattern classification</li>
+                                        </ul>
+                                        <div className="flex flex-wrap gap-2 mt-3">
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">EEG Analysis</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Graph Theory</span>
+                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Machine Learning</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    case 'certifications':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Certifications & Badges</h2>
+                                <div className="space-y-6">
+                                    <div>
+                                        <h3 className="text-xl font-bold text-blue-800 mb-4">IBM Badges</h3>
+                                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                                <h4 className="font-bold mb-2 text-blue-700">Cloud Native Security - DevSecOps</h4>
+                                                <div className="flex flex-wrap gap-2 mb-3">
+                                                    {['CI/CD', 'Cloud Native', 'DevOps', 'Kubernetes', 'Security', 'Jenkins', 'Tekton'].map(skill => 
+                                                        <span key={skill} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{skill}</span>
+                                                    )}
+                                                </div>
+                                                <a href="https://www.credly.com/badges/fa727fda-e0a7-406b-a8fb-c080da8e7d3f/public_url" target="_blank" className="text-blue-600 hover:underline">View Credential</a>
+                                            </div>
+                                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                                <h4 className="font-bold mb-2 text-green-700">Cloud Native Security - Data Security</h4>
+                                                <div className="flex flex-wrap gap-2 mb-3">
+                                                    {['Cloud Native', 'Data Security', 'Hyper Protect', 'Istio', 'Security'].map(skill => 
+                                                        <span key={skill} className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">{skill}</span>
+                                                    )}
+                                                </div>
+                                                <a href="https://www.credly.com/badges/0ace42fd-7b8c-4501-bb7c-ebf33575ad23/public_url" target="_blank" className="text-green-600 hover:underline">View Credential</a>
+                                            </div>
+                                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                                <h4 className="font-bold mb-2 text-purple-700">Cloud Native Security - App Security</h4>
+                                                <div className="flex flex-wrap gap-2 mb-3">
+                                                    {['App Security', 'Cloud Native', 'Kubernetes', 'Microservices', 'Security'].map(skill => 
+                                                        <span key={skill} className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">{skill}</span>
+                                                    )}
+                                                </div>
+                                                <a href="https://www.credly.com/badges/9d944414-9e7e-467f-b292-34300de02d48/public_url" target="_blank" className="text-purple-600 hover:underline">View Credential</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div className="mt-6">
+                                        <h3 className="text-xl font-bold text-blue-800 mb-4">Cisco Badges</h3>
+                                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                                <h4 className="font-bold mb-2 text-blue-700">Packet Tracer Introduction</h4>
+                                                <div className="flex flex-wrap gap-2 mb-3">
+                                                    {['IoT', 'Network Simulation', 'PT'].map(skill => 
+                                                        <span key={skill} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{skill}</span>
+                                                    )}
+                                                </div>
+                                                <a href="https://www.credly.com/badges/41ecc3ad-11da-4bba-9a4b-e7559145fd18/public_url" target="_blank" className="text-blue-600 hover:underline">View Credential</a>
+                                            </div>
+                                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                                <h4 className="font-bold mb-2 text-green-700">Cybersecurity Introduction</h4>
+                                                <div className="flex flex-wrap gap-2 mb-3">
+                                                    {['Cyber Best Practices', 'Cybersecurity', 'Network Vulnerabilities', 'Threat Detection'].map(skill => 
+                                                        <span key={skill} className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">{skill}</span>
+                                                    )}
+                                                </div>
+                                                <a href="https://www.credly.com/badges/4114d47a-74fc-4982-a777-c68bf9aef9fb/public_url" target="_blank" className="text-green-600 hover:underline">View Credential</a>
+                                            </div>
+                                            <div className="bg-white p-6 rounded-lg shadow-md">
+                                                <h4 className="font-bold mb-2 text-purple-700">IoT Introduction</h4>
+                                                <div className="flex flex-wrap gap-2 mb-3">
+                                                    {['Digital Transformation', 'Internet of Things'].map(skill => 
+                                                        <span key={skill} className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">{skill}</span>
+                                                    )}
+                                                </div>
+                                                <a href="https://www.credly.com/badges/fc11ada3-f0b8-4370-946c-5a51e1505364/public_url" target="_blank" className="text-purple-600 hover:underline">View Credential</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                }
+            };
+
+            return (
+                <div className="flex min-h-screen bg-gray-100">
+                    {/* Vertical Menu */}
+                    <div className="w-64 bg-blue-900 text-white p-6 shadow-lg">
+                        <div className="mb-8 text-center">
+                            <h1 className="text-2xl font-bold">Manasa Pantra</h1>
+                            <p className="text-sm text-blue-200">AI Engineer</p>
+                        </div>
+                        <nav className="space-y-2">
+                            {menuItems.map((item) => {
+                                const Icon = item.icon;
+                                return (
+                                    <button
+                                        key={item.id}
+                                        onClick={() => setActiveSection(item.id)}
+                                        className={`w-full text-left p-3 rounded flex items-center transition-colors duration-200 ${
+                                            activeSection === item.id 
+                                                ? 'bg-blue-700 text-white' 
+                                                : 'hover:bg-blue-800 text-blue-200'
+                                        }`}
+                                    >
+                                        <Icon className="mr-3" size={20} />
+                                        {item.label}
+                                    </button>
+                                );
+                            })}
+                        </nav>
+                    </div>
+
+                    {/* Main Content Area */}
+                    <div className="flex-1 overflow-y-auto">
+                        {renderSection()}
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(<ResumePage />, document.getElementById('root'));
+    </script>
+</body>
+</html>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manasa Pantra | AI Engineer</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide-react@0.263.0/dist/umd/lucide-react.min.js"></script>
     <style>
-        :root {
-            --primary-color: #1a3c5b;
-            --secondary-color: #3776ab;
-            --accent-color: #f0f8ff;
-            --text-color: #333;
-            --light-text: #666;
-        }
-
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
         body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: #f9f9f9;
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
         }
-
-        .vertical-menu {
-            width: 250px;
-            background-color: var(--primary-color);
-            height: 100vh;
-            position: fixed;
-            left: 0;
-            top: 0;
-            padding: 2rem;
-            color: white;
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-
-        .menu-item {
-            display: block;
-            padding: 0.75rem 1rem;
-            color: white;
-            text-decoration: none;
-            transition: background-color 0.3s;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
         }
-
-        .menu-item:hover, .menu-item.active {
-            background-color: rgba(255,255,255,0.1);
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 4px;
         }
-
-        .content-area {
-            margin-left: 250px;
-            padding: 2rem;
-        }
-
-        .section {
-            display: none;
-        }
-
-        .section.active {
-            display: block;
-        }
-
-        .skill-tag {
-            background-color: var(--accent-color);
-            color: var(--secondary-color);
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
-            margin: 0.25rem;
-            font-size: 0.8rem;
-        }
-
-        .project-card {
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
     </style>
 </head>
-<body class="flex">
-    <!-- Vertical Menu -->
-    <div class="vertical-menu">
-        <h2 class="text-2xl font-bold mb-6 text-center">Manasa Pantra</h2>
-        <nav>
-            <a href="#" class="menu-item active" data-section="about">About Me</a>
-            <a href="#" class="menu-item" data-section="skills">Skills</a>
-            <a href="#" class="menu-item" data-section="experience">Experience</a>
-            <a href="#" class="menu-item" data-section="leadership">Leadership</a>
-            <a href="#" class="menu-item" data-section="education">Education</a>
-            <a href="#" class="menu-item" data-section="projects">Projects</a>
-            <a href="#" class="menu-item" data-section="publications">Publications</a>
-            <a href="#" class="menu-item" data-section="certifications">Certifications</a>
-        </nav>
-    </div>
+<body>
+    <div id="root"></div>
 
-    <!-- Content Area -->
-    <div class="content-area w-full">
-        <!-- About Section -->
-        <section id="about" class="section active">
-            <h1 class="text-3xl font-bold mb-4">About Me</h1>
-            <div class="flex">
-                <div class="w-1/3 pr-6">
-                    <img src="manasa.jpg" alt="Manasa Pantra" class="rounded-lg shadow-md" style="object-fit: cover; height: 400px; width: 100%;">
-                </div>
-                <div class="w-2/3">
-                    <p class="mb-4">I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.</p>
-                    <p class="mb-4">My expertise spans across firmware design, machine learning model optimization, and language processing systems. I have experience working with SSD firmware at Sandisk and have developed projects like EduBot and Language Neutralization System that demonstrate my capabilities in AI and ML.</p>
-                    <div class="mt-4">
-                        <a href="mailto:manasapantra9@gmail.com" class="bg-blue-500 text-white px-4 py-2 rounded mr-2">Email</a>
-                        <a href="https://www.linkedin.com/in/manasa-pantra/" class="bg-blue-700 text-white px-4 py-2 rounded">LinkedIn</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <script type="text/babel">
+        const { User, Code, Briefcase, Award, FileText, BookOpen, Linkedin, Mail, Phone } = lucideReact;
 
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-bold mb-2">Programming Languages</h3>
-                    <div>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">JavaScript</span>
-                    </div>
-                </div>
-                <div class="bg-white p-4 rounded shadow">
-                    <h3 class="font-bold mb-2">AI & Machine Learning</h3>
-                    <div>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">LLMs</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        const ResumePage = () => {
+            const [activeSection, setActiveSection] = React.useState('about');
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <h2 class="text-2xl font-bold mb-4">Professional Experience</h2>
-            <div class="bg-white p-4 rounded shadow mb-4">
-                <h3 class="font-bold text-xl">SanDisk - Firmware Engineer</h3>
-                <p class="text-gray-600">Oct 2023 – Aug 2024 | Bangalore, India</p>
-                <ul class="list-disc pl-5 mt-2">
-                    <li>Led PSUT module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
-                    <li>Identified critical performance bottlenecks through in-depth technical diagnostics</li>
-                    <li>Analyzed Read Error Handling path, resolving critical bugs in data path operations</li>
-                </ul>
-            </div>
-        </section>
+            const menuItems = [
+                { id: 'about', label: 'About Me', icon: User },
+                { id: 'skills', label: 'Skills', icon: Code },
+                { id: 'experience', label: 'Experience', icon: Briefcase },
+                { id: 'leadership', label: 'Leadership', icon: Briefcase },
+                { id: 'education', label: 'Education', icon: Award },
+                { id: 'projects', label: 'Projects', icon: FileText },
+                { id: 'publications', label: 'Publications', icon: BookOpen }
+            ];
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2 class="text-2xl font-bold mb-4">Featured Projects</h2>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="project-card bg-white p-4 rounded shadow">
-                    <h3 class="font-bold mb-2">EduBot: Adaptive AI Tutor</h3>
-                    <p class="text-sm mb-2">An intelligent tutoring system with personalized learning experiences.</p>
-                    <div class="flex flex-wrap">
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">LLMs</span>
-                        <span class="skill-tag">LoRA</span>
-                    </div>
+            const ContactInfo = () => (
+                <div className="flex space-x-4 justify-center mt-4">
+                    <a href="mailto:manasa.pantra@stonybrook.edu" className="text-blue-600 hover:text-blue-800 flex items-center">
+                        <Mail className="mr-2" /> Email
+                    </a>
+                    <a href="https://www.linkedin.com/in/manasa-pantra/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 flex items-center">
+                        <Linkedin className="mr-2" /> LinkedIn
+                    </a>
+                    <a href="tel:+16317100342" className="text-blue-600 hover:text-blue-800 flex items-center">
+                        <Phone className="mr-2" /> +1 631-710-0342
+                    </a>
                 </div>
-                <div class="project-card bg-white p-4 rounded shadow">
-                    <h3 class="font-bold mb-2">Language Neutralization System</h3>
-                    <p class="text-sm mb-2">Real-time translation system for multilingual call centers.</p>
-                    <div class="flex flex-wrap">
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">ASR</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+            );
 
-    <script>
-        // Menu navigation
-        document.querySelectorAll('.menu-item').forEach(item => {
-            item.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Remove active class from all menu items and sections
-                document.querySelectorAll('.menu-item').forEach(menu => menu.classList.remove('active'));
-                document.querySelectorAll('.section').forEach(section => section.classList.remove('active'));
-                
-                // Add active class to clicked menu item and corresponding section
-                this.classList.add('active');
-                document.getElementById(this.dataset.section).classList.add('active');
-            });
-        });
-    </script>
-
-    <!-- Add additional sections at the end -->
-    <script>
-        // Dynamically add more sections
-        const additionalSections = [
-            {
-                id: 'leadership',
-                title: 'Leadership Experience',
-                content: `
-                    <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">Joint Secretary - ISTE</h3>
-                            <p class="text-gray-600 mb-2">Indian Society for Technical Education</p>
-                            <p class="text-sm">Jan 2022 – Dec 2022 | Tamil Nadu, India</p>
-                            <ul class="list-disc pl-5 text-sm text-gray-700 mt-2">
-                                <li><strong>Event and Workshop Coordination:</strong> Scheduled and organized various events and workshops to support and advance technical education initiatives. This included developing detailed plans, coordinating logistics, and ensuring that all activities were aligned with educational goals.</li>
-                                <li><strong>Budgeting and Event Management:</strong> Provided accurate budget quotations for each event and played a key role in managing the events. This involved tracking expenses and overseeing logistical arrangements within budgetary constraints.</li>
-                                <li><strong>Stakeholder Communication and Policy Development:</strong> Facilitated effective communication among members, stakeholders, and partners to ensure smooth collaboration and information flow.</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">Student Coordinator</h3>
-                            <p class="text-gray-600 mb-2">CSE Department</p>
-                            <p class="text-sm">Jan 2021 – Dec 2021 | Tamil Nadu, India</p>
-                            <ul class="list-disc pl-5 text-sm text-gray-700 mt-2">
-                                <li><strong>Leadership and Team Management:</strong> Provided strong leadership by guiding student volunteers and coordinating team efforts for various departmental activities. Fostered a collaborative environment to ensure all team members were motivated and working effectively toward common goals.</li>
-                                <li><strong>Problem-Solving and Conflict Resolution:</strong> Identified and addressed issues promptly, finding creative solutions to challenges that arose during events and activities. Mediated conflicts between students and faculty to maintain a positive and productive atmosphere.</li>
-                            </ul>
-                        </div>
-                    </div>
-                `
-            },
-            {
-                id: 'education',
-                title: 'Education',
-                content: `
-                    <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">Stony Brook University</h3>
-                            <p class="text-gray-600 mb-2">Master of Science in Engineering of Artificial Intelligence</p>
-                            <p class="text-sm">Aug 2023 - Present | Stony Brook, New York</p>
-                            <ul class="list-disc pl-5 text-sm text-gray-700 mt-2">
-                                <li>Coursework: Deep Learning, Modern Sensors in AI Apps, Stochastic Systems</li>
-                                <li>Specialization in Advanced Machine Learning Techniques</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">PSG Institute of Technology</h3>
-                            <p class="text-gray-600 mb-2">Bachelor of Engineering in Computer Science</p>
-                            <p class="text-sm">Aug 2019 - May 2023 | Tamil Nadu, India</p>
-                            <ul class="list-disc pl-5 text-sm text-gray-700 mt-2">
-                                <li>CGPA: 3.75/4.0</li>
-                                <li>Key Courses: Data Structures, Artificial Intelligence, Cloud Computing</li>
-                            </ul>
-                        </div>
-                    </div>
-                `
-            },
-            {
-                id: 'publications',
-                title: 'Research Publications',
-                content: `
-                    <div class="space-y-4">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">Cloud Migration Research</h3>
-                            <p class="text-gray-600 mb-2">Comprehensive Analysis of Cloud Migration Strategies</p>
-                            <ul class="list-disc pl-5 text-sm text-gray-700">
-                                <li>Examined cloud migration approaches for modern enterprises</li>
-                                <li>Analyzed impact on business agility and digital transformation</li>
-                                <li>Studied migration strategies of leading tech companies</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-3">
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Cloud Computing</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Digital Transformation</span>
+            const renderSection = () => {
+                switch(activeSection) {
+                    case 'about':
+                        return (
+                            <div className="p-6">
+                                <h1 className="text-3xl font-bold mb-4">Manasa Pantra</h1>
+                                <p className="text-xl text-gray-600 mb-4">AI Engineer | Firmware Developer</p>
+                                <ContactInfo />
+                                <div className="mt-6">
+                                    <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Professional Summary</h2>
+                                    <p className="text-gray-700 leading-relaxed mb-4">
+                                        I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.
+                                    </p>
+                                    <p className="text-gray-700 leading-relaxed">
+                                        My expertise spans across firmware design, machine learning model optimization, and language processing systems. I have experience working with SSD firmware at Sandisk and have developed cutting-edge projects like EduBot and Language Neutralization System that demonstrate my capabilities in AI and ML.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">Brain Abnormality Detection</h3>
-                            <p class="text-gray-600 mb-2">Machine Learning Approach to EEG Analysis</p>
-                            <ul class="list-disc pl-5 text-sm text-gray-700">
-                                <li>Applied graph theory measures to EEG data</li>
-                                <li>Developed machine learning models for abnormality classification</li>
-                                <li>Achieved high accuracy in detecting brain pattern variations</li>
-                            </ul>
-                            <div class="flex flex-wrap gap-2 mt-3">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Machine Learning</span>
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">EEG Analysis</span>
+                        );
+                    case 'skills':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Technical Skills</h2>
+                                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="font-bold mb-3 text-blue-800">Programming Languages</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Python', 'C', 'C++', 'JavaScript', 'SQL', 'Assembly'].map(skill => (
+                                                <span key={skill} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">{skill}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="font-bold mb-3 text-green-800">AI & Machine Learning</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Machine Learning', 'Deep Learning', 'NLP', 'LLMs', 'Text Classification', 'Text Generation', 'Translation', 'ASR'].map(skill => (
+                                                <span key={skill} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">{skill}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="font-bold mb-3 text-purple-800">Libraries & Frameworks</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['PyTorch', 'TensorFlow', 'Scikit-learn', 'OpenCV', 'Hugging Face', 'SpaCy', 'NLTK', 'Langchain'].map(skill => (
+                                                <span key={skill} className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">{skill}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="font-bold mb-3 text-red-800">MLOps & DevOps</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Git', 'Docker', 'Linux', 'MLflow', 'DVC', 'CML'].map(skill => (
+                                                <span key={skill} className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">{skill}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="font-bold mb-3 text-indigo-800">LLM Techniques</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['LoRA', 'QLoRA', 'RLHF', 'PPO', 'DPO'].map(skill => (
+                                                <span key={skill} className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">{skill}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="font-bold mb-3 text-teal-800">Data Management</h3>
+                                        <div className="flex flex-wrap gap-2">
+                                            {['Firebase', 'Redis', 'Vector Databases', 'Hadoop', 'MapReduce'].map(skill => (
+                                                <span key={skill} className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">{skill}</span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                `
-            },
-            {
-                id: 'certifications',
-                title: 'Certifications & Badges',
-                content: `
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-blue-800 mb-2">IBM DevSecOps</h3>
-                            <div class="flex flex-wrap gap-2 mb-3">
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Cloud Native</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">DevOps</span>
-                                <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Security</span>
+                        );
+                    case 'experience':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Professional Experience</h2>
+                                <div className="space-y-4">
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div>
+                                                <h3 className="text-xl font-bold text-blue-800">Sandisk</h3>
+                                                <p className="text-gray-600">Engineer, Firmware Design and Development</p>
+                                            </div>
+                                            <span className="text-sm text-gray-500">Oct 2023 – Aug 2024 | Bangalore, India</span>
+                                        </div>
+                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                                            <li>Led PSUT (Physical Storage Unit Test) module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
+                                            <li>Identified critical performance bottlenecks through comprehensive technical diagnostics</li>
+                                            <li>Analyzed Read Error Handling path, resolving critical bugs in data path operations</li>
+                                            <li>Investigated multiple hardware bugs across simulation and real hardware environments</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#" class="text-blue-600 hover:underline">View Credential</a>
-                        </div>
-                        <div class="bg-white p-6 rounded-lg shadow-md">
-                            <h3 class="text-xl font-bold text-green-800 mb-2">Cisco Cybersecurity</h3>
-                            <div class="flex flex-wrap gap-2 mb-3">
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Network Security</span>
-                                <span class="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Threat Detection</span>
+                        );
+                    case 'leadership':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Leadership Experience</h2>
+                                <div className="space-y-4">
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Joint Secretary - ISTE</h3>
+                                        <p className="text-gray-600 mb-2">Indian Society for Technical Education</p>
+                                        <p className="text-sm text-gray-500 mb-3">Jan 2022 – Dec 2022 | Tamil Nadu, India</p>
+                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                                            <li>Event and Workshop Coordination: Scheduled and organized various events to support technical education initiatives</li>
+                                            <li>Budgeting and Event Management: Provided accurate budget quotations and managed event logistics</li>
+                                            <li>Stakeholder Communication: Facilitated effective communication among members and partners</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Student Coordinator</h3>
+                                        <p className="text-gray-600 mb-2">CSE Department</p>
+                                        <p className="text-sm text-gray-500 mb-3">Jan 2021 – Dec 2021 | Tamil Nadu, India</p>
+                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                                            <li>Leadership and Team Management: Guided student volunteers and coordinated departmental activities</li>
+                                            <li>Problem-Solving: Identified and addressed challenges, maintaining a productive atmosphere</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <a href="#" class="text-green-600 hover:underline">View Credential</a>
-                        </div>
-                    </div>
-                `
-            }
-        ];
-
-        // Append additional sections to the content area
-        additionalSections.forEach(section => {
-            const sectionElement = document.createElement('section');
-            sectionElement.id = section.id;
-            sectionElement.classList.add('section');
-            
-            const titleElement = document.createElement('h2');
-            titleElement.classList.add('text-2xl', 'font-bold', 'mb-4');
-            titleElement.textContent = section.title;
-            
-            const contentElement = document.createElement('div');
-            contentElement.innerHTML = section.content;
-            
-            sectionElement.appendChild(titleElement);
-            sectionElement.appendChild(contentElement);
-            
-            document.querySelector('.content-area').appendChild(sectionElement);
-        });
-    </script>
-</body>
-</html>
+                        );
+                    case 'education':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Education</h2>
+                                <div className="space-y-4">
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div>
+                                                <h3 className="text-xl font-bold text-blue-800">Stony Brook University</h3>
+                                                <p className="text-gray-600">M.S. in Engineering of Artificial Intelligence</p>
+                                            </div>
+                                            <span className="text-sm text-gray-500">Aug 2023 - Present | Stony Brook, NY</span>
+                                        </div>
+                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                                            <li>Coursework: Deep Learning, Modern Sensors in AI Apps, Stochastic Systems</li>
+                                            <li>Specialization in Advanced Machine Learning Techniques</li>
+                                        </ul>
+                                    </div>
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <div className="flex justify-between items-start mb-3">
+                                            <div>
+                                                <h3 className="text-xl font-bold text-blue-800">PSG Institute of Technology</h3>
+                                                <p className="text-gray-600">B.E. in Computer Science Engineering</p>
+                                            </div>
+                                            <span className="text-sm text-gray-500">Aug 2019 - May 2023 | Tamil Nadu, India</span>
+                                        </div>
+                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
+                                            <li>CGPA: 3.75/4.0</li>
+                                            <li>Key Courses: Data Structures, AI, Cloud Computing, Networking</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        );
+                    case 'projects':
+                        return (
+                            <div className="p-6">
+                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Projects</h2>
+                                <div className="grid md:grid-cols-2 gap-4">
+                                    <div className="bg-white p-6 rounded-lg shadow-md">
+                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Edu
