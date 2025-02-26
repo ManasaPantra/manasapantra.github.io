@@ -92,13 +92,14 @@
             gap: 40px;
             align-items: flex-start; /* Changed from center to align at top */
             flex-wrap: wrap;
+            position: relative;
+            top: -30px; /* Move entire content up */
         }
         
         .about-image {
             flex: 1;
             min-width: 300px;
             text-align: center;
-            margin-top: -20px; /* Added to move image upward */
         }
         
         .about-image img {
@@ -389,7 +390,7 @@
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="manasa.jpg" alt="Manasa Pantra" style="object-position: top; object-fit: cover; height: 400px; width: 350px;">
+                    <img src="manasa.jpg" alt="Manasa Pantra" style="object-position: top; object-fit: cover; height: 400px; width: 350px; margin-top: 0;">
                 </div>
                 <div class="about-text">
                     <p>I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.</p>
