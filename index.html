@@ -89,14 +89,18 @@
         .about-content {
             display: flex;
             gap: 40px;
-            align-items: flex-start;  /* Changed from center to align at top */
+            align-items: center; /* Changed back to center alignment */
             flex-wrap: wrap;
+            position: relative; /* Added for positioning */
         }
         
         .about-image {
             flex: 1;
             min-width: 300px;
             text-align: center;
+            margin-top: -20px; /* Move image slightly up */
+            position: relative;
+            z-index: 2;
         }
         
         .about-image img {
@@ -109,7 +113,7 @@
         .about-text {
             flex: 2;
             min-width: 300px;
-            padding-top: 10px; /* Add padding to better align with image */
+            text-align: justify; /* Added text justification */
         }
         
         .skills-container {
@@ -514,17 +518,15 @@
                 <div class="timeline-item left">
                     <div class="timeline-content">
                         <img src="https://www.stonybrook.edu/far-beyond/img/branding/logo/sbu-logo-horizontal.svg" alt="Stony Brook University Logo" class="org-logo">
-                        <h3>Stony Brook University</h3>
+                        <h3>Stony Brook University | M.S. in Engineering of Artificial Intelligence</h3>
                         <p class="date">Aug 2023 - Present | Stony Brook, New York</p>
-                        <p>M.S. in Engineering of Artificial Intelligence</p>
                     </div>
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH37LtXYCjKlvUMdtrfVcShDxKHRjgmWRErg&usqp=CAU" alt="PSG Institute Logo" class="org-logo">
-                        <h3>PSG Institute of Technology and Applied Research</h3>
+                        <h3>PSG Institute of Technology and Applied Research | B.E. in Computer Science Engineering</h3>
                         <p class="date">Aug 2019 - May 2023 | Tamil Nadu, India</p>
-                        <p>B.E. in Computer Science Engineering</p>
                     </div>
                 </div>
             </div>
