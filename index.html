@@ -1,436 +1,1535 @@
-Bot: Adaptive AI Tutor</h3>
-                                        <p className="text-gray-600 mb-3">Intelligent tutoring system for personalized learning</p>
-                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
-                                            <li>Curated high-quality dataset of 1,500 instances from 5,000 samples</li>
-                                            <li>Developed domain-specific chatbot using Mistral-7B with 99% accuracy</li>
-                                            <li>Enhanced model reasoning by dynamically controlling test-time compute</li>
-                                            <li>Implemented 4-bit quantization to reduce model inference time by 40%</li>
-                                            <li>Integrated LoRA to improve model efficiency by 45%</li>
-                                        </ul>
-                                        <div className="flex flex-wrap gap-2 mt-3">
-                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">PyTorch</span>
-                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">LLMs</span>
-                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">LoRA</span>
-                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Quantization</span>
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="text-xl font-bold text-green-800 mb-2">Language Neutralization System</h3>
-                                        <p className="text-gray-600 mb-3">Real-time translation system for multilingual call centers</p>
-                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
-                                            <li>Architected real-time translation system supporting 10+ languages</li>
-                                            <li>Constructed streaming pipeline with Speech Recognition, Translation, and TTS</li>
-                                            <li>Reduced processing delay by 40% through optimized streaming</li>
-                                            <li>Streamlined system for accelerated machines, yielding 30% performance boost</li>
-                                            <li>Established API web socket, amplifying system accessibility by 80%</li>
-                                        </ul>
-                                        <div className="flex flex-wrap gap-2 mt-3">
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">ASR</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">NLP</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">TTS</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Docker</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">API</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    case 'publications':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Research Publications</h2>
-                                <div className="space-y-4">
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Cloud Migration Research</h3>
-                                        <p className="text-gray-600 mb-3">A Study on Cloud Migration and Exploring Its Application and Impact on Modern Technology</p>
-                                        <div className="flex justify-between items-start mb-3">
-                                            <div>
-                                                <span className="text-sm text-gray-500">Bachelor of Engineering Project</span>
-                                                <p className="text-sm text-gray-600">PSG Institute of Technology and Applied Research</p>
-                                            </div>
-                                            <span className="text-sm text-gray-500">August 2021</span>
-                                        </div>
-                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
-                                            <li>Conducted comprehensive research on cloud migration strategies</li>
-                                            <li>Explored diverse applications of cloud migration</li>
-                                            <li>Analyzed key cloud migration tools and deployment models</li>
-                                            <li>Examined case studies from leading tech companies</li>
-                                        </ul>
-                                        <div className="flex flex-wrap gap-2 mt-3">
-                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Cloud Computing</span>
-                                            <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Digital Transformation</span>
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="text-xl font-bold text-green-800 mb-2">Brain Abnormality Analysis</h3>
-                                        <p className="text-gray-600 mb-3">Analysis of Brain Abnormalities using Global Measures of Graph Theory</p>
-                                        <div className="flex justify-between items-start mb-3">
-                                            <div>
-                                                <span className="text-sm text-gray-500">Collaborative Research Project</span>
-                                                <p className="text-sm text-gray-600">PSG Institute of Technology and Applied Research</p>
-                                            </div>
-                                            <span className="text-sm text-gray-500">August 2021</span>
-                                        </div>
-                                        <ul className="list-disc pl-5 text-sm text-gray-700 space-y-2">
-                                            <li>Developed machine learning model for brain abnormality detection</li>
-                                            <li>Constructed unweighted functional brain networks from EEG data</li>
-                                            <li>Applied graph theory measures for network analysis</li>
-                                            <li>Developed machine learning models for brain pattern classification</li>
-                                        </ul>
-                                        <div className="flex flex-wrap gap-2 mt-3">
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">EEG Analysis</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Graph Theory</span>
-                                            <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Machine Learning</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    case 'certifications':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Certifications & Badges</h2>
-                                <div className="space-y-6">
-                                    <div>
-                                        <h3 className="text-xl font-bold text-blue-800 mb-4">IBM Badges</h3>
-                                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                            <div className="bg-white p-6 rounded-lg shadow-md">
-                                                <h4 className="font-bold mb-2 text-blue-700">Cloud Native Security - DevSecOps</h4>
-                                                <div className="flex flex-wrap gap-2 mb-3">
-                                                    {['CI/CD', 'Cloud Native', 'DevOps', 'Kubernetes', 'Security', 'Jenkins', 'Tekton'].map(skill => 
-                                                        <span key={skill} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{skill}</span>
-                                                    )}
-                                                </div>
-                                                <a href="https://www.credly.com/badges/fa727fda-e0a7-406b-a8fb-c080da8e7d3f/public_url" target="_blank" className="text-blue-600 hover:underline">View Credential</a>
-                                            </div>
-                                            <div className="bg-white p-6 rounded-lg shadow-md">
-                                                <h4 className="font-bold mb-2 text-green-700">Cloud Native Security - Data Security</h4>
-                                                <div className="flex flex-wrap gap-2 mb-3">
-                                                    {['Cloud Native', 'Data Security', 'Hyper Protect', 'Istio', 'Security'].map(skill => 
-                                                        <span key={skill} className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">{skill}</span>
-                                                    )}
-                                                </div>
-                                                <a href="https://www.credly.com/badges/0ace42fd-7b8c-4501-bb7c-ebf33575ad23/public_url" target="_blank" className="text-green-600 hover:underline">View Credential</a>
-                                            </div>
-                                            <div className="bg-white p-6 rounded-lg shadow-md">
-                                                <h4 className="font-bold mb-2 text-purple-700">Cloud Native Security - App Security</h4>
-                                                <div className="flex flex-wrap gap-2 mb-3">
-                                                    {['App Security', 'Cloud Native', 'Kubernetes', 'Microservices', 'Security'].map(skill => 
-                                                        <span key={skill} className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">{skill}</span>
-                                                    )}
-                                                </div>
-                                                <a href="https://www.credly.com/badges/9d944414-9e7e-467f-b292-34300de02d48/public_url" target="_blank" className="text-purple-600 hover:underline">View Credential</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div className="mt-6">
-                                        <h3 className="text-xl font-bold text-blue-800 mb-4">Cisco Badges</h3>
-                                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                            <div className="bg-white p-6 rounded-lg shadow-md">
-                                                <h4 className="font-bold mb-2 text-blue-700">Packet Tracer Introduction</h4>
-                                                <div className="flex flex-wrap gap-2 mb-3">
-                                                    {['IoT', 'Network Simulation', 'PT'].map(skill => 
-                                                        <span key={skill} className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">{skill}</span>
-                                                    )}
-                                                </div>
-                                                <a href="https://www.credly.com/badges/41ecc3ad-11da-4bba-9a4b-e7559145fd18/public_url" target="_blank" className="text-blue-600 hover:underline">View Credential</a>
-                                            </div>
-                                            <div className="bg-white p-6 rounded-lg shadow-md">
-                                                <h4 className="font-bold mb-2 text-green-700">Cybersecurity Introduction</h4>
-                                                <div className="flex flex-wrap gap-2 mb-3">
-                                                    {['Cyber Best Practices', 'Cybersecurity', 'Network Vulnerabilities', 'Threat Detection'].map(skill => 
-                                                        <span key={skill} className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">{skill}</span>
-                                                    )}
-                                                </div>
-                                                <a href="https://www.credly.com/badges/4114d47a-74fc-4982-a777-c68bf9aef9fb/public_url" target="_blank" className="text-green-600 hover:underline">View Credential</a>
-                                            </div>
-                                            <div className="bg-white p-6 rounded-lg shadow-md">
-                                                <h4 className="font-bold mb-2 text-purple-700">IoT Introduction</h4>
-                                                <div className="flex flex-wrap gap-2 mb-3">
-                                                    {['Digital Transformation', 'Internet of Things'].map(skill => 
-                                                        <span key={skill} className="bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs">{skill}</span>
-                                                    )}
-                                                </div>
-                                                <a href="https://www.credly.com/badges/fc11ada3-f0b8-4370-946c-5a51e1505364/public_url" target="_blank" className="text-purple-600 hover:underline">View Credential</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                }
-            };
-
-            return (
-                <div className="flex min-h-screen bg-gray-100">
-                    {/* Vertical Menu */}
-                    <div className="w-64 bg-blue-900 text-white p-6 shadow-lg">
-                        <div className="mb-8 text-center">
-                            <h1 className="text-2xl font-bold">Manasa Pantra</h1>
-                            <p className="text-sm text-blue-200">AI Engineer</p>
-                        </div>
-                        <nav className="space-y-2">
-                            {menuItems.map((item) => {
-                                const Icon = item.icon;
-                                return (
-                                    <button
-                                        key={item.id}
-                                        onClick={() => setActiveSection(item.id)}
-                                        className={`w-full text-left p-3 rounded flex items-center transition-colors duration-200 ${
-                                            activeSection === item.id 
-                                                ? 'bg-blue-700 text-white' 
-                                                : 'hover:bg-blue-800 text-blue-200'
-                                        }`}
-                                    >
-                                        <Icon className="mr-3" size={20} />
-                                        {item.label}
-                                    </button>
-                                );
-                            })}
-                        </nav>
+<script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger menu toggle for mobile
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking a nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return; // Skip if href is just "#"
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 60, // Adjust for navbar height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add active class to nav items on scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            function highlightNavOnScroll() {
+                let scrollPosition = window.scrollY + 100; // Add offset to account for navbar
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 70;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active-link');
+                            if (link.getAttribute('href') === '#' + sectionId) {
+                                link.classList.add('active-link');
+                            }
+                        });
+                    }
+                });
+            }
+            
+            // Call the function on scroll
+            window.addEventListener('scroll', highlightNavOnScroll);
+            
+            // Call it also on page load
+            highlightNavOnScroll();
+        });
+    </script>    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="#">MP</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>    <section id="research">
+        <div class="container">
+            <h2 class="section-title">Research Publications</h2>
+            <div class="research-grid">
+                <div class="research-card">
+                    <div class="research-image">
+                        <span>Cloud Migration</span>
                     </div>
-
-                    {/* Main Content Area */}
-                    <div className="flex-1 overflow-y-auto">
-                        {renderSection()}
+                    <div class="research-content">
+                        <h3>A Study on Cloud Migration and Exploring Its Application and Impact on Modern Technology</h3>
+                        <p>This study explores the diverse applications of cloud migration and its profound impact on contemporary technology. Through in-depth analysis and comprehensive research, this report sheds light on the evolving landscape of cloud computing.</p>
+                        <ul>
+                            <li>Examined various cloud migration strategies including rehosting, refactoring, and replatforming</li>
+                            <li>Analyzed cloud service models (IaaS, PaaS, SaaS) and deployment models</li>
+                            <li>Studied case studies of successful migrations from companies like Netflix, Dropbox, and Spotify</li>
+                            <li>Evaluated impact on business agility, innovation, and digital transformation</li>
+                        </ul>
+                        <div class="research-tech">
+                            <span>Cloud Computing</span>
+                            <span>Digital Transformation</span>
+                            <span>Migration Strategies</span>
+                            <span>Business Innovation</span>
+                        </div>
                     </div>
                 </div>
-            );
-        };
-
-        ReactDOM.render(<ResumePage />, document.getElementById('root'));
-    </script>
-</body>
-</html>
-<!DOCTYPE html>
+                
+                <div class="research-card">
+                    <div class="research-image">
+                        <span>Brain Abnormalities</span>
+                    </div>
+                    <div class="research-content">
+                        <h3>An Analysis of Brain Abnormalities using Global Measures of Graph Theory</h3>
+                        <p>A computational approach to detect brain abnormalities by applying graph theory measures to EEG data. This research developed a machine learning model to identify abnormalities based on brain connectivity patterns.</p>
+                        <ul>
+                            <li>Constructed unweighted functional brain networks from EEG data</li>
+                            <li>Applied graph theory measures: characteristic path length, global efficiency, transitivity, and modularity</li>
+                            <li>Developed and compared 11 machine learning models to classify normal vs. abnormal brain patterns</li>
+                            <li>Achieved highest accuracy with XGBoost algorithm for abnormality detection</li>
+                            <li>Created a web-based interface for real-time classification of brain abnormalities</li>
+                        </ul>
+                        <div class="research-tech">
+                            <span>EEG Analysis</span>
+                            <span>Graph Theory</span>
+                            <span>Machine Learning</span>
+                            <span>Neural Networks</span>
+                            <span>Medical Informatics</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <section id="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications & Badges</h2>
+            
+            <h3 class="certification-provider">IBM Badges</h3>
+            <div class="badges-container">
+                <div class="badge-card">
+                    <img src="ibm_devsecops.png" alt="IBM DevSecOps Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Cloud Native Security Conference -- DevSecOps</h4>
+                        <p class="badge-skills">
+                            <span>CI/CD</span>
+                            <span>Cloud Native</span>
+                            <span>DevOps</span>
+                            <span>Kubernetes</span>
+                            <span>Security</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/fa727fda-e0a7-406b-a8fb-c080da8e7d3f/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="ibm_datasecurity.png" alt="IBM Data Security Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Cloud Native Security Conference -- Data Security</h4>
+                        <p class="badge-skills">
+                            <span>Cloud Native</span>
+                            <span>Data Security</span>
+                            <span>Hyper Protect</span>
+                            <span>Istio</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/0ace42fd-7b8c-4501-bb7c-ebf33575ad23/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="ibm_appsecurity.png" alt="IBM App Security Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Cloud Native Security Conference -- App Security</h4>
+                        <p class="badge-skills">
+                            <span>App Security</span>
+                            <span>Cloud Native</span>
+                            <span>Kubernetes</span>
+                            <span>Microservices</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/9d944414-9e7e-467f-b292-34300de02d48/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="ibm_cloudnative.png" alt="IBM Cloud-Native Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Building Cloud-Native and Multicloud Applications</h4>
+                        <p class="badge-skills">
+                            <span>Building Applications</span>
+                            <span>Cloud-native</span>
+                            <span>Multicloud</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/59a73284-d7b6-40c5-bd55-02681fdee1d9/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="ibm_cloude.png" alt="IBM Cloud Essentials Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>IBM Cloud Essentials</h4>
+                        <p class="badge-skills">
+                            <span>Advisor</span>
+                            <span>Cloud</span>
+                            <span>IBM Cloud</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/55074d70-3e36-4c17-b0a3-b72f17f23e85/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="ibm_containers.png" alt="IBM Containers Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Containers & Kubernetes Essentials</h4>
+                        <p class="badge-skills">
+                            <span>Cloud</span>
+                            <span>Container</span>
+                            <span>IBM Cloud</span>
+                            <span>Kubernetes</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/1d268e32-36f3-4ec4-96f0-980a92babdfa/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="ibm_cloudcore.png" alt="IBM Cloud Core Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Cloud Core</h4>
+                        <p class="badge-skills">
+                            <span>Cloud Native</span>
+                            <span>Container</span>
+                            <span>DevOps</span>
+                            <span>IBM Cloud</span>
+                            <span>Multicloud</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/f1fbb2e5-bc45-4e8f-9911-9f1b4ce611d1/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="certification-provider">Cisco Badges</h3>
+            <div class="badges-container">
+                <div class="badge-card">
+                    <img src="cisco_packettracer.png" alt="Cisco Packet Tracer Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Introduction to Packet Tracer</h4>
+                        <p class="badge-skills">
+                            <span>IoT</span>
+                            <span>Network Simulation</span>
+                            <span>PT</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/41ecc3ad-11da-4bba-9a4b-e7559145fd18/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="cisco_cybersecurity.png" alt="Cisco Cybersecurity Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Introduction to Cybersecurity</h4>
+                        <p class="badge-skills">
+                            <span>Cyber Best Practices</span>
+                            <span>Cybersecurity</span>
+                            <span>Network Vulnerabilities</span>
+                            <span>Threat Detection</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/4114d47a-74fc-4982-a777-c68bf9aef9fb/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+                
+                <div class="badge-card">
+                    <img src="cisco_iot.png" alt="Cisco IoT Badge" class="badge-image">
+                    <div class="badge-content">
+                        <h4>Introduction to IoT</h4>
+                        <p class="badge-skills">
+                            <span>Digital Transformation</span>
+                            <span>Internet of Things</span>
+                        </p>
+                        <a href="https://www.credly.com/badges/fc11ada3-f0b8-4370-946c-5a51e1505364/public_url" target="_blank" class="badge-link">View Badge</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="logo-container">
+                            <img src="sandisk.png" alt="Sandisk Logo">
+                            <h3>Engineer, Firmware Design and Development</h3>
+                        </div>
+                        <p class="date">Oct 2023 – Aug 2024 | Sandisk, Bangalore, India</p>
+                        <ul>
+                            <li>Led PSUT module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
+                            <li>Identified critical performance bottlenecks through in-depth technical diagnostics</li>
+                            <li>Analyzed Read Error Handling path, resolving critical bugs in data path operations</li>
+                            <li>Investigated and resolved hardware bugs across simulation and real hardware environments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="logo-container">
+                            <img src="sandisk.png" alt="Sandisk Logo">
+                            <h3>Firmware Design and Development Intern</h3>
+                        </div>
+                        <p class="date">Jan 2023 – Jun 2023 | Sandisk, Bangalore, India</p>
+                        <ul>
+                            <li>Gained insights into 2D/3D NAND memory architecture and flash interface implementations</li>
+                            <li>Participated in debugging hardware-software interface issues using JTAG & simulation tools</li>
+                            <li>Improved memory performance by analyzing allocation patterns and resource utilization</li>
+                            <li>Analyzed NVMe protocol command structures and firmware interaction mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manasa Pantra | AI Engineer</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lucide-react@0.263.0/dist/umd/lucide-react.min.js"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        :root {
+            --primary-color: #1a3c5b;
+            --secondary-color: #3776ab;
+            --accent-color: #f0f8ff;
+            --text-color: #333;
+            --light-text: #666;
+            --header-font: 'Georgia', serif;
+            --body-font: 'Arial', sans-serif;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: var(--body-font);
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f9f9f9;
             scroll-behavior: smooth;
         }
-        ::-webkit-scrollbar {
-            width: 8px;
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
-        ::-webkit-scrollbar-track {
-            background: #f1f1f1;
+        
+        /* Navbar styles */
+        .navbar {
+            background-color: var(--primary-color);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-        ::-webkit-scrollbar-thumb {
-            background: #888;
+        
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        
+        .nav-logo a {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: var(--header-font);
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+            padding: 5px 0;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--accent-color);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s;
+        }
+        
+        .nav-link:hover::after, .nav-link.active-link::after {
+            width: 100%;
+        }
+        
+        .nav-link.active-link {
+            color: var(--accent-color);
+        }
+        
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background-color: white;
+        }
+        
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 130px 0 50px; /* Increased from 80px to accommodate fixed navbar */
+            text-align: center;
+        }
+        
+        header h1 {
+            font-family: var(--header-font);
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            white-space: nowrap;
+        }
+        
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
             border-radius: 4px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s;
         }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #555;
+        
+        .contact-info a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        section {
+            padding: 60px 0;
+            scroll-margin-top: 70px; /* For smooth scrolling with fixed navbar */
+        }
+        
+        .section-title {
+            font-family: var(--header-font);
+            font-size: 2rem;
+            margin-bottom: 40px;
+            text-align: center;
+            color: var(--primary-color);
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            position: relative;
+            top: -30px;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .about-image img {
+            width: 100%;
+            max-width: 350px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-text {
+            flex: 2;
+            min-width: 300px;
+            margin-top: 20px;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        
+        .skill-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .skill-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+            font-family: var(--header-font);
+        }
+        
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        
+        .skill-tag {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: var(--secondary-color);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+        
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+        
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            right: -12px;
+            background-color: white;
+            border: 4px solid var(--secondary-color);
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        
+        .left {
+            left: 0;
+        }
+        
+        .right {
+            left: 50%;
+        }
+        
+        .left::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            right: 30px;
+            border: medium solid var(--secondary-color);
+            border-width: 10px 0 10px 10px;
+            border-color: transparent transparent transparent var(--secondary-color);
+        }
+        
+        .right::before {
+            content: " ";
+            height: 0;
+            position: absolute;
+            top: 22px;
+            width: 0;
+            z-index: 1;
+            left: 30px;
+            border: medium solid var(--secondary-color);
+            border-width: 10px 10px 10px 0;
+            border-color: transparent var(--secondary-color) transparent transparent;
+        }
+        
+        .right::after {
+            left: -12px;
+        }
+        
+        .timeline-content {
+            padding: 20px 30px;
+            background-color: white;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+        }
+        
+        .timeline-content h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .timeline-content .date {
+            color: var(--light-text);
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .projects-grid, .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .project-card, .research-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .project-card:hover, .research-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .project-image, .research-image {
+            height: 180px;
+            background-color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .project-content, .research-content {
+            padding: 20px;
+        }
+        
+        .project-card h3, .research-card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+        }
+        
+        .project-card p, .research-card p {
+            color: var(--light-text);
+            margin-bottom: 15px;
+        }
+        
+        .project-tech, .research-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+        
+        .project-tech span, .research-tech span {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        
+        /* Certifications and Badges styles */
+        .certification-provider {
+            color: var(--secondary-color);
+            margin: 40px 0 20px;
+            text-align: center;
+            font-family: var(--header-font);
+        }
+        
+        .badges-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+        
+        .badge-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s;
+        }
+        
+        .badge-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .badge-image {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin: 20px auto;
+        }
+        
+        .badge-content {
+            padding: 0 20px 20px;
+            text-align: center;
+        }
+        
+        .badge-content h4 {
+            color: var(--secondary-color);
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .badge-skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        
+        .badge-skills span {
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        
+        .badge-link {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .badge-link:hover {
+            background-color: var(--primary-color);
+        }
+        
+        /* Logo styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .logo-container img {
+            height: 60px;
+            margin-right: 20px;
+            object-fit: contain;
+        }
+        
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+        
+        footer p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Media query adjustments */
+        @media screen and (max-width: 768px) {
+            .hamburger {
+                display: block;
+            }
+            
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+            
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 60px;
+                gap: 0;
+                flex-direction: column;
+                background-color: var(--primary-color);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+                padding: 20px 0;
+            }
+            
+            .nav-item {
+                margin: 16px 0;
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p {
+                white-space: normal;
+                font-size: 1.1rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid var(--secondary-color);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--secondary-color) transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 19px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+        
+        footer p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Media query adjustments */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p {
+                white-space: normal; /* Allow wrapping on small screens */
+                font-size: 1.1rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid var(--secondary-color);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--secondary-color) transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 19px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+        }
+        
+        footer p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Media query adjustments */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p {
+                white-space: normal; /* Allow wrapping on small screens */
+                font-size: 1.1rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid var(--secondary-color);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--secondary-color) transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 19px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+        
+        footer p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Media query adjustments */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p {
+                white-space: normal; /* Allow wrapping on small screens */
+                font-size: 1.1rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid var(--secondary-color);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--secondary-color) transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 19px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+        }
+        
+        footer p {
+            margin-bottom: 15px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            padding: 8px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+        
+        .social-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+        
+        /* Logo styles */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        
+        .logo-container img {
+            height: 60px; /* Increased from 40px */
+            margin-right: 20px; /* Increased from 15px */
+            object-fit: contain;
+        }
+        
+        /* Media query adjustments */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            header p {
+                white-space: normal; /* Allow wrapping on small screens */
+                font-size: 1.1rem;
+            }
+            
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item::before {
+                left: 60px;
+                border: medium solid var(--secondary-color);
+                border-width: 10px 10px 10px 0;
+                border-color: transparent var(--secondary-color) transparent transparent;
+            }
+            
+            .left::after, .right::after {
+                left: 19px;
+            }
+            
+            .right {
+                left: 0%;
+            }
+            
+            .logo-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .logo-container img {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="root"></div>
+    <header>
+        <div class="container">
+            <h1>Manasa Pantra</h1>
+            <p>AI Engineer | Firmware Developer | MS in Engineering of Artificial Intelligence</p>
+            <div class="contact-info">
+                <a href="mailto:manasapantra9@gmail.com">manasapantra9@gmail.com</a>
+                <a href="https://www.linkedin.com/in/manasa-pantra/">LinkedIn</a>
+                <a href="tel:6317100342">631-710-0342</a>
+            </div>
+        </div>
+    </header>
 
-    <script type="text/babel">
-        const { User, Code, Briefcase, Award, FileText, BookOpen, Linkedin, Mail, Phone } = lucideReact;
-
-        const ResumePage = () => {
-            const [activeSection, setActiveSection] = React.useState('about');
-
-            const menuItems = [
-                { id: 'about', label: 'About Me', icon: User },
-                { id: 'skills', label: 'Skills', icon: Code },
-                { id: 'experience', label: 'Experience', icon: Briefcase },
-                { id: 'leadership', label: 'Leadership', icon: Briefcase },
-                { id: 'education', label: 'Education', icon: Award },
-                { id: 'projects', label: 'Projects', icon: FileText },
-                { id: 'publications', label: 'Publications', icon: BookOpen }
-            ];
-
-            const ContactInfo = () => (
-                <div className="flex space-x-4 justify-center mt-4">
-                    <a href="mailto:manasa.pantra@stonybrook.edu" className="text-blue-600 hover:text-blue-800 flex items-center">
-                        <Mail className="mr-2" /> Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/manasa-pantra/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 flex items-center">
-                        <Linkedin className="mr-2" /> LinkedIn
-                    </a>
-                    <a href="tel:+16317100342" className="text-blue-600 hover:text-blue-800 flex items-center">
-                        <Phone className="mr-2" /> +1 631-710-0342
-                    </a>
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="manasa.jpg" alt="Manasa Pantra" style="object-position: top; object-fit: cover; height: 400px; width: 350px; margin-top: 0;">
                 </div>
-            );
+                <div class="about-text">
+                    <p>I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.</p>
+                    <p>My expertise spans across firmware design, machine learning model optimization, and language processing systems. I have experience working with SSD firmware at Sandisk and have developed projects like EduBot and Language Neutralization System that demonstrate my capabilities in AI and ML.</p>
+                    <p>I am passionate about pushing the boundaries of what's possible with AI, particularly in making intelligent systems more efficient and accessible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            const renderSection = () => {
-                switch(activeSection) {
-                    case 'about':
-                        return (
-                            <div className="p-6">
-                                <h1 className="text-3xl font-bold mb-4">Manasa Pantra</h1>
-                                <p className="text-xl text-gray-600 mb-4">AI Engineer | Firmware Developer</p>
-                                <ContactInfo />
-                                <div className="mt-6">
-                                    <h2 className="text-2xl font-semibold mb-3 border-b pb-2">Professional Summary</h2>
-                                    <p className="text-gray-700 leading-relaxed mb-4">
-                                        I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.
-                                    </p>
-                                    <p className="text-gray-700 leading-relaxed">
-                                        My expertise spans across firmware design, machine learning model optimization, and language processing systems. I have experience working with SSD firmware at Sandisk and have developed cutting-edge projects like EduBot and Language Neutralization System that demonstrate my capabilities in AI and ML.
-                                    </p>
-                                </div>
-                            </div>
-                        );
-                    case 'skills':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Technical Skills</h2>
-                                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="font-bold mb-3 text-blue-800">Programming Languages</h3>
-                                        <div className="flex flex-wrap gap-2">
-                                            {['Python', 'C', 'C++', 'JavaScript', 'SQL', 'Assembly'].map(skill => (
-                                                <span key={skill} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">{skill}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="font-bold mb-3 text-green-800">AI & Machine Learning</h3>
-                                        <div className="flex flex-wrap gap-2">
-                                            {['Machine Learning', 'Deep Learning', 'NLP', 'LLMs', 'Text Classification', 'Text Generation', 'Translation', 'ASR'].map(skill => (
-                                                <span key={skill} className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">{skill}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="font-bold mb-3 text-purple-800">Libraries & Frameworks</h3>
-                                        <div className="flex flex-wrap gap-2">
-                                            {['PyTorch', 'TensorFlow', 'Scikit-learn', 'OpenCV', 'Hugging Face', 'SpaCy', 'NLTK', 'Langchain'].map(skill => (
-                                                <span key={skill} className="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">{skill}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="font-bold mb-3 text-red-800">MLOps & DevOps</h3>
-                                        <div className="flex flex-wrap gap-2">
-                                            {['Git', 'Docker', 'Linux', 'MLflow', 'DVC', 'CML'].map(skill => (
-                                                <span key={skill} className="bg-red-100 text-red-800 px-3 py-1 rounded-full text-sm">{skill}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="font-bold mb-3 text-indigo-800">LLM Techniques</h3>
-                                        <div className="flex flex-wrap gap-2">
-                                            {['LoRA', 'QLoRA', 'RLHF', 'PPO', 'DPO'].map(skill => (
-                                                <span key={skill} className="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full text-sm">{skill}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="font-bold mb-3 text-teal-800">Data Management</h3>
-                                        <div className="flex flex-wrap gap-2">
-                                            {['Firebase', 'Redis', 'Vector Databases', 'Hadoop', 'MapReduce'].map(skill => (
-                                                <span key={skill} className="bg-teal-100 text-teal-800 px-3 py-1 rounded-full text-sm">{skill}</span>
-                                            ))}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    case 'experience':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Professional Experience</h2>
-                                <div className="space-y-4">
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <div className="flex justify-between items-start mb-3">
-                                            <div>
-                                                <h3 className="text-xl font-bold text-blue-800">Sandisk</h3>
-                                                <p className="text-gray-600">Engineer, Firmware Design and Development</p>
-                                            </div>
-                                            <span className="text-sm text-gray-500">Oct 2023 – Aug 2024 | Bangalore, India</span>
-                                        </div>
-                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                                            <li>Led PSUT (Physical Storage Unit Test) module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
-                                            <li>Identified critical performance bottlenecks through comprehensive technical diagnostics</li>
-                                            <li>Analyzed Read Error Handling path, resolving critical bugs in data path operations</li>
-                                            <li>Investigated multiple hardware bugs across simulation and real hardware environments</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    case 'leadership':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Leadership Experience</h2>
-                                <div className="space-y-4">
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Joint Secretary - ISTE</h3>
-                                        <p className="text-gray-600 mb-2">Indian Society for Technical Education</p>
-                                        <p className="text-sm text-gray-500 mb-3">Jan 2022 – Dec 2022 | Tamil Nadu, India</p>
-                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                                            <li>Event and Workshop Coordination: Scheduled and organized various events to support technical education initiatives</li>
-                                            <li>Budgeting and Event Management: Provided accurate budget quotations and managed event logistics</li>
-                                            <li>Stakeholder Communication: Facilitated effective communication among members and partners</li>
-                                        </ul>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Student Coordinator</h3>
-                                        <p className="text-gray-600 mb-2">CSE Department</p>
-                                        <p className="text-sm text-gray-500 mb-3">Jan 2021 – Dec 2021 | Tamil Nadu, India</p>
-                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                                            <li>Leadership and Team Management: Guided student volunteers and coordinated departmental activities</li>
-                                            <li>Problem-Solving: Identified and addressed challenges, maintaining a productive atmosphere</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    case 'education':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Education</h2>
-                                <div className="space-y-4">
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <div className="flex justify-between items-start mb-3">
-                                            <div>
-                                                <h3 className="text-xl font-bold text-blue-800">Stony Brook University</h3>
-                                                <p className="text-gray-600">M.S. in Engineering of Artificial Intelligence</p>
-                                            </div>
-                                            <span className="text-sm text-gray-500">Aug 2023 - Present | Stony Brook, NY</span>
-                                        </div>
-                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                                            <li>Coursework: Deep Learning, Modern Sensors in AI Apps, Stochastic Systems</li>
-                                            <li>Specialization in Advanced Machine Learning Techniques</li>
-                                        </ul>
-                                    </div>
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <div className="flex justify-between items-start mb-3">
-                                            <div>
-                                                <h3 className="text-xl font-bold text-blue-800">PSG Institute of Technology</h3>
-                                                <p className="text-gray-600">B.E. in Computer Science Engineering</p>
-                                            </div>
-                                            <span className="text-sm text-gray-500">Aug 2019 - May 2023 | Tamil Nadu, India</span>
-                                        </div>
-                                        <ul className="list-disc pl-5 text-gray-700 space-y-2">
-                                            <li>CGPA: 3.75/4.0</li>
-                                            <li>Key Courses: Data Structures, AI, Cloud Computing, Networking</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        );
-                    case 'projects':
-                        return (
-                            <div className="p-6">
-                                <h2 className="text-2xl font-semibold mb-5 border-b pb-2">Projects</h2>
-                                <div className="grid md:grid-cols-2 gap-4">
-                                    <div className="bg-white p-6 rounded-lg shadow-md">
-                                        <h3 className="text-xl font-bold text-blue-800 mb-2">Edu
+    <section id="skills" style="background-color: var(--accent-color);">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Assembly</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">Text Classification</span>
+                        <span class="skill-tag">Text Generation</span>
+                        <span class="skill-tag">Translation</span>
+                        <span class="skill-tag">ASR</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>LLM Techniques</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">LoRA</span>
+                        <span class="skill-tag">QLoRA</span>
+                        <span class="skill-tag">RLHF</span>
+                        <span class="skill-tag">PPO</span>
+                        <span class="skill-tag">DPO</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Libraries & Frameworks</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">SpaCy</span>
+                        <span class="skill-tag">NLTK</span>
+                        <span class="skill-tag">Langchain</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>Data Science Tools</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>MLOps & DevOps</h3>
+                    <div class="skill-list">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">MLflow</span>
+                        <span class="skill-tag">DVC</span>
+                        <span class="skill-tag">CML</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rest of the content remains the same -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <img src="sandisk_logo.png" alt="Sandisk Logo" style="height: 40px; margin-right: 15px;">
+                            <h3>Engineer, Firmware Design and Development</h3>
+                        </div>
+                        <p class="date">Oct 2023 – Aug 2024 | Sandisk, Bangalore, India</p>
+                        <ul>
+                            <li>Led PSUT module analysis for BiCS 8, X4 SSD across multi-capacity configurations</li>
+                            <li>Identified critical performance bottlenecks through in-depth technical diagnostics</li>
+                            <li>Analyzed Read Error Handling path, resolving critical bugs in data path operations</li>
+                            <li>Investigated and resolved hardware bugs across simulation and real hardware environments</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                            <img src="sandisk_logo.png" alt="Sandisk Logo" style="height: 40px; margin-right: 15px;">
+                            <h3>Firmware Design and Development Intern</h3>
+                        </div>
+                        <p class="date">Jan 2023 – Jun 2023 | Sandisk, Bangalore, India</p>
+                        <ul>
+                            <li>Gained insights into 2D/3D NAND memory architecture and flash interface implementations</li>
+                            <li>Participated in debugging hardware-software interface issues using JTAG & simulation tools</li>
+                            <li>Improved memory performance by analyzing allocation patterns and resource utilization</li>
+                            <li>Analyzed NVMe protocol command structures and firmware interaction mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" style="background-color: var(--accent-color);">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <div class="logo-container">
+                            <img src="SBU.png" alt="Stony Brook University Logo">
+                            <h3>Stony Brook University</h3>
+                        </div>
+                        <p class="date">Aug 2023 - Present | Stony Brook, New York</p>
+                        <p>M.S. in Engineering of Artificial Intelligence</p>
+                    </div>
+                </div>
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <div class="logo-container">
+                            <img src="psg.png" alt="PSG Institute Logo">
+                            <h3>PSG Institute of Technology and Applied Research</h3>
+                        </div>
+                        <p class="date">Aug 2019 - May 2023 | Tamil Nadu, India</p>
+                        <p>B.E. in Computer Science Engineering</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>EduBot</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>EduBot: Adaptive AI Tutor</h3>
+                        <p>An intelligent tutoring system designed to provide personalized learning experiences.</p>
+                        <ul>
+                            <li>Curated high-quality dataset of 1,500 instances</li>
+                            <li>Developed domain-specific chatbot using Mistral-7B with 99% accuracy</li>
+                            <li>Enhanced model reasoning by dynamically controlling test-time compute</li>
+                            <li>Implemented 4-bit quantization to reduce model inference time by 40%</li>
+                            <li>Integrated LoRA to improve model efficiency by 45%</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>LLMs</span>
+                            <span>LoRA</span>
+                            <span>Quantization</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>Language Neutralization</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Language Neutralization System</h3>
+                        <p>Real-time translation system for call centers supporting multiple languages.</p>
+                        <ul>
+                            <li>Architected translation system supporting 10+ languages with 95% accuracy</li>
+                            <li>Constructed streaming pipeline incorporating ASR, Translation, and TTS</li>
+                            <li>Streamlined system for accelerated machines, yielding 30% performance boost</li>
+                            <li>Orchestrated system deployment via Docker</li>
+                            <li>Established API web socket for call center applications</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>ASR</span>
+                            <span>NLP</span>
+                            <span>TTS</span>
+                            <span>Docker</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>NAND Flash Controller</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>High-Speed NAND Flash Controller Optimization</h3>
+                        <p>Firmware-level optimization for NAND Flash memory systems.</p>
+                        <ul>
+                            <li>Optimized firmware-level wear-leveling and garbage collection, reducing write amplification by 30%</li>
+                            <li>Implemented LDPC and BCH error correction codes, reducing bit error rate by 20%</li>
+                            <li>Developed adaptive read-retry for high-temperature reliability, increasing system stability by 15%</li>
+                            <li>Debugged firmware timing issues using JTAG, logic analyzers, and oscilloscopes</li>
+                            <li>Designed power-aware optimizations, reducing energy consumption by 10% for embedded storage</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Firmware</span>
+                            <span>NAND</span>
+                            <span>SSD</span>
+                            <span>ECC</span>
+                            <span>JTAG</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>Secure Boot</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Secure Boot Implementation for Embedded Linux</h3>
+                        <p>Custom secure bootloader preventing unauthorized firmware execution.</p>
+                        <ul>
+                            <li>Developed custom secure bootloader for ARM Cortex-A53</li>
+                            <li>Integrated RSA-2048, SHA-256 hashing, achieving 99.9% firmware integrity validation</li>
+                            <li>Implemented AES-128 encryption for OTA updates, ensuring tamper-proof deployment</li>
+                            <li>Designed rollback protection, preventing outdated firmware execution</li>
+                            <li>Optimized boot-time cryptographic verification, reducing secure boot latency by 25%</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Embedded Linux</span>
+                            <span>Cryptography</span>
+                            <span>ARM</span>
+                            <span>OTA</span>
+                            <span>Security</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <span>Food Delivery</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Enterprise Food Delivery Ecosystem</h3>
+                        <p>Scalable, event-driven system for real-time food delivery management.</p>
+                        <ul>
+                            <li>Implemented real-time order tracking system with efficient state management</li>
+                            <li>Automated order processing workflows via Make.com, reducing customer order processing time from 10 to 3 minutes</li>
+                            <li>Designed interactive admin dashboard with real-time analytics for 25+ daily users</li>
+                            <li>Architected scalable, event-driven system managing real-time data for 25+ concurrent users</li>
+                            <li>Leveraged Firebase Functions for serverless execution, ensuring low-latency communication</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>Firebase</span>
+                            <span>Make.com</span>
+                            <span>Real-time</span>
+                            <span>Analytics</span>
+                            <span>Serverless</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Manasa Pantra. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="mailto:manasapantra9@gmail.com">📧</a>
+                <a href="https://www.linkedin.com/in/manasa-pantra/">in</a>
+                <a href="tel:6317100342">📱</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
