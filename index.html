@@ -337,6 +337,24 @@
         .project-card:hover, .research-card:hover {
             transform: translateY(-5px);
         }
+        .project-links, .research-links {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.project-link, .research-link {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.project-link:hover, .research-link:hover {
+    background-color: var(--primary-color);
+}
         
         .project-image, .research-image {
             height: 180px;
@@ -827,6 +845,11 @@
                             <span>LoRA</span>
                             <span>Quantization</span>
                         </div>
+                        <div class="project-links">
+            <a href="https://github.com/ManasaPantra/Edubot.git" target="_blank" class="project-link">
+                View Code on GitHub
+            </a>
+        </div>
                     </div>
                 </div>
                 <div class="project-card">
