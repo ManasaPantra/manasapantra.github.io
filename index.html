@@ -1,92 +1,4 @@
-<script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Hamburger menu toggle for mobile
-            const hamburger = document.querySelector('.hamburger');
-            const navMenu = document.querySelector('.nav-menu');
-            
-            hamburger.addEventListener('click', function() {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-            
-            // Close menu when clicking a nav link
-            document.querySelectorAll('.nav-link').forEach(link => {
-                link.addEventListener('click', function() {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-            
-            // Smooth scrolling for anchor links
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    if (targetId === '#') return; // Skip if href is just "#"
-                    
-                    const targetElement = document.querySelector(targetId);
-                    if (targetElement) {
-                        window.scrollTo({
-                            top: targetElement.offsetTop - 60, // Adjust for navbar height
-                            behavior: 'smooth'
-                        });
-                    }
-                });
-            });
-            
-            // Add active class to nav items on scroll
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            function highlightNavOnScroll() {
-                let scrollPosition = window.scrollY + 100; // Add offset to account for navbar
-                
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - 70;
-                    const sectionHeight = section.offsetHeight;
-                    const sectionId = section.getAttribute('id');
-                    
-                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
-                        navLinks.forEach(link => {
-                            link.classList.remove('active-link');
-                            if (link.getAttribute('href') === '#' + sectionId) {
-                                link.classList.add('active-link');
-                            }
-                        });
-                    }
-                });
-            }
-            
-            // Call the function on scroll
-            window.addEventListener('scroll', highlightNavOnScroll);
-            
-            // Call it also on page load
-            highlightNavOnScroll();
-        });
-    </script>    <nav class="navbar">
-        <div class="container">
-            <div class="nav-logo">
-                <a href="#">MP</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
-                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    
-    
-                <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -122,8 +34,7 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        
-        /* Navbar styles */
+            /* Navbar styles */
         .navbar {
             background-color: var(--primary-color);
             position: fixed;
@@ -204,7 +115,7 @@
         header {
             background-color: var(--primary-color);
             color: white;
-            padding: 130px 0 50px; /* Increased from 80px to accommodate fixed navbar */
+            padding: 130px 0 50px; /* Increased to accommodate fixed navbar */
             text-align: center;
         }
         
@@ -240,9 +151,7 @@
         
         .contact-info a:hover {
             background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        section {
+        }section {
             padding: 60px 0;
             scroll-margin-top: 70px; /* For smooth scrolling with fixed navbar */
         }
@@ -314,9 +223,7 @@
             padding: 5px 10px;
             border-radius: 4px;
             font-size: 0.9rem;
-        }
-        
-        .timeline {
+        }.timeline {
             position: relative;
             max-width: 1200px;
             margin: 0 auto;
@@ -408,9 +315,7 @@
             color: var(--light-text);
             font-style: italic;
             margin-bottom: 15px;
-        }
-        
-        .projects-grid, .research-grid {
+        }.projects-grid, .research-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             gap: 30px;
@@ -528,9 +433,7 @@
             padding: 3px 8px;
             border-radius: 4px;
             font-size: 0.8rem;
-        }
-        
-        .badge-link {
+        }.badge-link {
             display: inline-block;
             background-color: var(--secondary-color);
             color: white;
@@ -677,326 +580,29 @@
             }
         }
     </style>
-        
-        footer p {
-            margin-bottom: 15px;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Media query adjustments */
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-            
-            header p {
-                white-space: normal; /* Allow wrapping on small screens */
-                font-size: 1.1rem;
-            }
-            
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::before {
-                left: 60px;
-                border: medium solid var(--secondary-color);
-                border-width: 10px 10px 10px 0;
-                border-color: transparent var(--secondary-color) transparent transparent;
-            }
-            
-            .left::after, .right::after {
-                left: 19px;
-            }
-            
-            .right {
-                left: 0%;
-            }
-            
-            .logo-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .logo-container img {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-        }
-        
-        footer p {
-            margin-bottom: 15px;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Media query adjustments */
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-            
-            header p {
-                white-space: normal; /* Allow wrapping on small screens */
-                font-size: 1.1rem;
-            }
-            
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::before {
-                left: 60px;
-                border: medium solid var(--secondary-color);
-                border-width: 10px 10px 10px 0;
-                border-color: transparent var(--secondary-color) transparent transparent;
-            }
-            
-            .left::after, .right::after {
-                left: 19px;
-            }
-            
-            .right {
-                left: 0%;
-            }
-            
-            .logo-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .logo-container img {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-        
-        footer p {
-            margin-bottom: 15px;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Media query adjustments */
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-            
-            header p {
-                white-space: normal; /* Allow wrapping on small screens */
-                font-size: 1.1rem;
-            }
-            
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::before {
-                left: 60px;
-                border: medium solid var(--secondary-color);
-                border-width: 10px 10px 10px 0;
-                border-color: transparent var(--secondary-color) transparent transparent;
-            }
-            
-            .left::after, .right::after {
-                left: 19px;
-            }
-            
-            .right {
-                left: 0%;
-            }
-            
-            .logo-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .logo-container img {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-        }
-        
-        footer p {
-            margin-bottom: 15px;
-        }
-        
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            color: white;
-            text-decoration: none;
-            padding: 8px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 40px;
-            height: 40px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            transition: background-color 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-        }
-        
-        /* Logo styles */
-        .logo-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-        }
-        
-        .logo-container img {
-            height: 60px; /* Increased from 40px */
-            margin-right: 20px; /* Increased from 15px */
-            object-fit: contain;
-        }
-        
-        /* Media query adjustments */
-        @media screen and (max-width: 768px) {
-            header h1 {
-                font-size: 2.5rem;
-            }
-            
-            header p {
-                white-space: normal; /* Allow wrapping on small screens */
-                font-size: 1.1rem;
-            }
-            
-            .timeline::after {
-                left: 31px;
-            }
-            
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-            
-            .timeline-item::before {
-                left: 60px;
-                border: medium solid var(--secondary-color);
-                border-width: 10px 10px 10px 0;
-                border-color: transparent var(--secondary-color) transparent transparent;
-            }
-            
-            .left::after, .right::after {
-                left: 19px;
-            }
-            
-            .right {
-                left: 0%;
-            }
-            
-            .logo-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            .logo-container img {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
+</head><body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-logo">
+                <a href="#">MP</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+                <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
     <header>
         <div class="container">
             <h1>Manasa Pantra</h1>
@@ -1023,9 +629,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="skills" style="background-color: var(--accent-color);">
+    </section><section id="skills" style="background-color: var(--accent-color);">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
             <div class="skills-container">
@@ -1099,15 +703,14 @@
         </div>
     </section>
 
-    <!-- Rest of the content remains the same -->
     <section id="experience">
         <div class="container">
             <h2 class="section-title">Experience</h2>
             <div class="timeline">
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                            <img src="sandisk_logo.png" alt="Sandisk Logo" style="height: 40px; margin-right: 15px;">
+                        <div class="logo-container">
+                            <img src="sandisk.png" alt="Sandisk Logo">
                             <h3>Engineer, Firmware Design and Development</h3>
                         </div>
                         <p class="date">Oct 2023 – Aug 2024 | Sandisk, Bangalore, India</p>
@@ -1121,8 +724,8 @@
                 </div>
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <div style="display: flex; align-items: center; margin-bottom: 15px;">
-                            <img src="sandisk_logo.png" alt="Sandisk Logo" style="height: 40px; margin-right: 15px;">
+                        <div class="logo-container">
+                            <img src="sandisk.png" alt="Sandisk Logo">
                             <h3>Firmware Design and Development Intern</h3>
                         </div>
                         <p class="date">Jan 2023 – Jun 2023 | Sandisk, Bangalore, India</p>
@@ -1136,9 +739,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section id="education" style="background-color: var(--accent-color);">
+    </section><section id="education" style="background-color: var(--accent-color);">
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="timeline">
@@ -1241,6 +842,9 @@
                 <div class="project-card">
                     <div class="project-image">
                         <span>Secure Boot</span>
+                    </div><div class="project-card">
+                    <div class="project-image">
+                        <span>Secure Boot</span>
                     </div>
                     <div class="project-content">
                         <h3>Secure Boot Implementation for Embedded Linux</h3>
@@ -1286,8 +890,7 @@
                 </div>
             </div>
         </div>
-    </section>
-    </nav>    <section id="research">
+    </section><section id="research">
         <div class="container">
             <h2 class="section-title">Research Publications</h2>
             <div class="research-grid">
@@ -1338,7 +941,7 @@
                 </div>
             </div>
         </div>
-    </section>    <section id="certifications">
+    </section><section id="certifications">
         <div class="container">
             <h2 class="section-title">Certifications & Badges</h2>
             
@@ -1398,9 +1001,7 @@
                         </p>
                         <a href="https://www.credly.com/badges/59a73284-d7b6-40c5-bd55-02681fdee1d9/public_url" target="_blank" class="badge-link">View Badge</a>
                     </div>
-                </div>
-                
-                <div class="badge-card">
+                </div><div class="badge-card">
                     <img src="ibm_cloude.png" alt="IBM Cloud Essentials Badge" class="badge-image">
                     <div class="badge-content">
                         <h4>IBM Cloud Essentials</h4>
@@ -1485,8 +1086,7 @@
                 </div>
             </div>
         </div>
-
-    <footer>
+    </section><footer>
         <div class="container">
             <p>© 2025 Manasa Pantra. All Rights Reserved.</p>
             <div class="social-links">
@@ -1496,5 +1096,73 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger menu toggle for mobile
+            const hamburger = document.querySelector('.hamburger');
+            const navMenu = document.querySelector('.nav-menu');
+            
+            hamburger.addEventListener('click', function() {
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            
+            // Close menu when clicking a nav link
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if (targetId === '#') return; // Skip if href is just "#"
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 60, // Adjust for navbar height
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+            
+            // Add active class to nav items on scroll
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            function highlightNavOnScroll() {
+                let scrollPosition = window.scrollY + 100; // Add offset to account for navbar
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 70;
+                    const sectionHeight = section.offsetHeight;
+                    const sectionId = section.getAttribute('id');
+                    
+                    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                        navLinks.forEach(link => {
+                            link.classList.remove('active-link');
+                            if (link.getAttribute('href') === '#' + sectionId) {
+                                link.classList.add('active-link');
+                            }
+                        });
+                    }
+                });
+            }
+            
+            // Call the function on scroll
+            window.addEventListener('scroll', highlightNavOnScroll);
+            
+            // Call it also on page load
+            highlightNavOnScroll();
+        });
+    </script>
 </body>
 </html>
