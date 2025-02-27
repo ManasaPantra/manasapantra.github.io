@@ -164,33 +164,58 @@
             color: var(--primary-color);
         }
         
-        .about-content {
-            display: flex;
-            gap: 40px;
-            align-items: flex-start;
-            flex-wrap: wrap;
-            position: relative;
-            top: -30px;
-        }
-        
-        .about-image {
-            flex: 1;
-            min-width: 300px;
-            text-align: center;
-        }
-        
-        .about-image img {
-            width: 100%;
-            max-width: 350px;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-        
-        .about-text {
-            flex: 2;
-            min-width: 300px;
-            margin-top: 20px;
-        }
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 0 0 auto;
+    max-width: 350px;
+    width: 100%;
+}
+
+.profile-image {
+    width: 100%;
+    max-width: 350px;
+    height: 400px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image, .about-text {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .profile-image {
+        max-height: 400px;
+        width: 100%;
+        object-fit: cover;
+    }
+}
         
         .skills-container {
             display: grid;
@@ -639,19 +664,20 @@
     </header>
 
     <section id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="manasa.jpg" alt="Manasa Pantra" style="object-position: top; object-fit: cover; height: 400px; width: 350px; margin-top: 0;">
-                </div>
-                <div class="about-text">
-                    <p>I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.</p>
-                    <p>My expertise spans across firmware design, machine learning model optimization, and language processing systems. I have experience working with SSD firmware at Sandisk and have developed projects like EduBot and Language Neutralization System that demonstrate my capabilities in AI and ML.</p>
-                    <p>I am passionate about pushing the boundaries of what's possible with AI, particularly in making intelligent systems more efficient and accessible.</p>
-                </div>
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="manasa.jpg" alt="Manasa Pantra" class="profile-image">
+            </div>
+            <div class="about-text">
+                <p>I am an AI Engineer with a strong background in firmware development and machine learning. Currently pursuing my Master's in Engineering of Artificial Intelligence at Stony Brook University, I combine deep technical knowledge with practical experience in developing innovative solutions.</p>
+                <p>My expertise spans across firmware design, machine learning model optimization, and language processing systems. I have experience working with SSD firmware at Sandisk and have developed projects like EduBot and Language Neutralization System that demonstrate my capabilities in AI and ML.</p>
+                <p>I am passionate about pushing the boundaries of what's possible with AI, particularly in making intelligent systems more efficient and accessible.</p>
             </div>
         </div>
+    </div>
+</section>
     </section><section id="skills" style="background-color: var(--accent-color);">
         <div class="container">
             <h2 class="section-title">Technical Skills</h2>
