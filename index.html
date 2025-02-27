@@ -216,6 +216,25 @@
         object-fit: cover;
     }
 }
+        .about-text {
+    text-align: justify;
+    hyphens: auto; /* Helps with more natural justification */
+    line-height: 1.6;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    text-align: justify;
+    hyphens: auto;
+    word-wrap: break-word; /* Ensures long words don't overflow */
+}
+
+@media screen and (max-width: 768px) {
+    .about-text {
+        text-align: left; /* Better readability on small screens */
+        hyphens: none;
+    }
+}
         
         .skills-container {
             display: grid;
